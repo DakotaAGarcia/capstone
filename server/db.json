@@ -1,0 +1,55 @@
+{
+    "placesArray": [
+        {
+            "id":1,
+            "place": "Hawaii",
+            "picture":"https://www.gohawaii.com/sites/default/files/hero-unit-images/12845-p1bd4nb8t912gc1ic74nd14g2ru.jpg",
+            "stars": 0
+        },
+        {
+            "id":2,
+            "place": "Japan",
+            "picture":"https://www.washingtonian.com/wp-content/uploads/2020/07/Official-White-House-Photo-by-Andrea-Hanks-1.jpg",
+            "stars": 0
+        },
+        {
+            "id":3,
+            "place": "Egypt",
+            "picture":"https://doc-0g-8g-docs.googleusercontent.com/docs/securesc/r3g5lfuorotg32te7kohr6dgb2368sff/2md7b8f6pn55oeoiih3r34chmihkp1ev/1675278975000/03205746744472123968/07658504716269286514Z/1EcIFulp96qD3oxP5CAcQZk5bREnG6L6w?e=view&uuid=6a884d1d-a54b-40be-9f79-dcc924f04c9c",
+            "stars": 0
+        },
+        {
+            "id":4,
+            "place": "Alaska",
+            "picture":"https://doc-14-8g-docs.googleusercontent.com/docs/securesc/r3g5lfuorotg32te7kohr6dgb2368sff/uul21p58ahkprnuphndev3j2qgpqhraa/1675278975000/03205746744472123968/07658504716269286514Z/159UEaRn-XkW1Y0NH_b1f1OF-faQV9y7k?e=view&uuid=1287362a-d975-4d48-b01b-e9b244d7db57",
+            "stars": 0
+        }
+    ],
+
+    "eventsArray": [
+        {
+            "id": 1,
+            "event": "Surfing",
+            "picture": "https://drive.google.com/uc?export=view&id=1LYoiEsCjnX-9kXhG9d_NPxGCLaAV27j_",
+            "stars": 0
+        },
+        {
+            "id": 2,
+            "event": "Rock Climbing",
+            "picture": "https://drive.google.com/uc?export=view&id=16RjQ7HBSN0oNVqz79pYmog05wFqSbcbI",
+            "stars": 0
+        },
+        {
+            "id": 3,
+            "event": "Scuba Diving",
+            "picture": "https://drive.google.com/uc?export=view&id=10AoAdctlIJEWjC8mn9n-bciLRc_ourx7",
+            "stars": 0
+        },
+        {
+            "id": 4,
+            "event": "Boxing",
+            "picture": "https://drive.google.com/uc?export=view&id=1ovjSoLa9qH0S3pUvZGHW4EzU6JAHJeP4",
+            "stars": 0
+        }
+    ]
+}
