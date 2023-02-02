@@ -30,13 +30,9 @@
     border-radius: 50px;
   }
   #cover:hover {
-    transform: rotate(360deg);
-    transition: 2s;
+    transform: scale(1.02,1.02);
   }
-  #cover:active {
-    transform: rotate(360deg);
-    transition: 4s;
-  }
+  
   nav {
     display: flex;
     width: 200px;
@@ -69,7 +65,7 @@ height: fit-content;
   main{
    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #393E41;
     min-height: calc(100vh - 175px);
   }
@@ -80,6 +76,9 @@ height: fit-content;
     padding: 10px 10px;
     color: white;
     border-radius: 15px;
+  }
+  button:hover{
+    transform: scale(1.02,1.02);
   }
   
   input{
@@ -116,19 +115,19 @@ height: fit-content;
     padding-left:400px;
   }
   
-  /* #placesCard{
+  .event-template{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: solid;
     border-color: #F6F7EB;
-    height: 260px;
+    height: 280px;
     width: 195px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
-  } */
+  }
 
   .place-template{
     display: flex;
@@ -156,13 +155,14 @@ height: fit-content;
     transform: scale(1.02,1.02);
   }
   
-  .events-pics {
+  .eventspic {
     height: 175px;
     width: 175px;
     border-radius: 15px;
+    padding: 5px;
     object-fit: cover;
   }
-  .events-pics:hover{
+  .eventspic:hover{
     transform: scale(1.02,1.02);
   }
   .plan{

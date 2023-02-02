@@ -20,7 +20,15 @@ app.put('/places/:id', updatePlace)
 
 //endpoints for events
 
-const{getEvents, } = require('./controllerTwo')
+const{getEvents, addEvents, deleteEvent, updateEvent} = require('./controllerTwo')
+
+app.get('/events',getEvents)
+
+app.post('/events', addEvents)
+
+app.delete('/events/:id', deleteEvent)
+
+app.put('/events/:id', updateEvent)
 
 
 
