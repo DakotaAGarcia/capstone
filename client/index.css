@@ -38,18 +38,32 @@
     width: 200px;
     justify-content: space-between;
   }
-  
+  .nav-links{
+    display: flex;
+  }
   .nav-links:hover {
     color: #222222;
     cursor: pointer;
     font-weight: 800;
   }
+
+ 
   #placeName {
     width:fit-content;
     height: fit-content;
     
 }
 #placePicture {
+width: fit-content;
+height: fit-content;
+
+}
+#eventName {
+    width:fit-content;
+    height: fit-content;
+    
+}
+#eventPicture {
 width: fit-content;
 height: fit-content;
 
@@ -143,6 +157,34 @@ height: fit-content;
     margin: 25px;
   }
 
+  .list-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: #F6F7EB;
+    height: 280px;
+    width: 195px;
+    border-radius: 20px;
+    color: #CC7700;
+    margin: 25px;
+  }
+
+  .event-list-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: #F6F7EB;
+    height: 280px;
+    width: 195px;
+    border-radius: 20px;
+    color: #CC7700;
+    margin: 25px;
+  }
+
   
   .placesPic {
     height: 175px;
@@ -155,14 +197,14 @@ height: fit-content;
     transform: scale(1.02,1.02);
   }
   
-  .eventspic {
+  .eventsPic {
     height: 175px;
     width: 175px;
     border-radius: 15px;
     padding: 5px;
     object-fit: cover;
   }
-  .eventspic:hover{
+  .eventsPic:hover{
     transform: scale(1.02,1.02);
   }
   .plan{
@@ -181,4 +223,24 @@ height: fit-content;
   #sign-up:hover {
     background-color:black;
     box-shadow: 0 0 15px black;
+  }
+
+  #nextAdventure{
+padding-top: 200px;
+  }
+  #nextHobby{
+    padding-top: 100px;
+
+  }
+
+  .places-card, .events-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    width: 100%;
+  }
+  .hidden{
+    display: none;
   }

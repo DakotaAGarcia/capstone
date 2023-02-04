@@ -30,6 +30,25 @@ app.delete('/events/:id', deleteEvent)
 
 app.put('/events/:id', updateEvent)
 
+//endpoints for list
+
+const{addToList, getPlacesList, deletePlaceList, updatePlaceList, getEventsList, addEventsToList, deleteEventList, updateEventList} = require('./controllerThree')
+
+app.post('/placelist/:id', addToList)
+
+app.get('/placelist', getPlacesList)
+
+app.delete('/placelist/:id', deletePlaceList)
+
+app.put('/placelist/:id', updatePlaceList)
+
+app.post('/eventlist/:id', addEventsToList)
+
+app.get('/eventlist', getEventsList)
+
+app.delete('/eventlist/:id', deleteEventList)
+
+app.put('/eventlist/:id', updateEventList)
 
 
 //start server with app.listen

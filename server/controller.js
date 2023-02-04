@@ -2,7 +2,7 @@ let db = require("./db.json");
 let placesArray = db.placesArray;
 
 
-let globalId = 5;
+let globalId = 13;
 
 module.exports = {
     getPlaces: (req, res) =>{
@@ -46,5 +46,7 @@ module.exports = {
         }
 
         res.status(200).send(placesArray)
-    }
+    },
+
+
 }

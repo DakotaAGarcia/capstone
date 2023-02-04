@@ -4,7 +4,13 @@ const placesTemp = document.querySelector('#placesCard')
 
 const eventsTemp = document.querySelector('#eventsCard')
 
+const placeList = document.querySelector('#placeListCard')
+
+const eventList = document.querySelector('#eventListCard')
+
 const addNewPlace = document.querySelector('#addAPlace')
+
+const addNewEvent = document.querySelector('#addAnEvent')
 
 const signUp = document.querySelector('#sign-up')
 
@@ -12,15 +18,17 @@ const emailInput = document.querySelector(".email-sign-up")
 
 const footer = document.querySelector("footer")
 
-
+//----------------------------------------------------------
+//-------------------------places---------------------------
+//----------------------------------------------------------
 
 const createPlacesTemplate = (place) => {
     const newPlaceTemp = document.createElement('section')
     newPlaceTemp.classList.add('place-template')
-console.log(place.picture)
-    newPlaceTemp.innerHTML = `
-    <img class="placesPic "src =${place.picture}/>
 
+    newPlaceTemp.innerHTML = `
+    <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
+    <input type = "text" placeholder="Enter a description">
     <p>${place.place}</p>
 
     <section>
@@ -119,17 +127,53 @@ const updatePlace = (id, type) =>{
         console.log(err)
     })
 }
+//-------------------places list---------------------------
 
-const addToList = ()=>{
+// const createPlaceListTemplate = (place) => {
+//     const newPlaceListTemp = document.createElement('section')
+//     newPlaceListTemp.classList.add('list-template')
 
+//     newPlaceListTemp.innerHTML = `
+//     <img class="placesPic "src =${place.picture}/>
+
+//     <p>${place.place}</p>
+
+//     <section>
+//     <button onclick="updatePlace(${place.id}, 'downvote')" >-</button>
+//     Rating: ${place.stars}
+//     <button onclick="updatePlace(${place.id}, 'upvote')">+</button>
+//     </section>
+//     <button onclick="addToList(${place.id})">add </button>
+//     <button onclick="deletePlace(${place.id})">Remove</button>
+
+//     `
+    
+// }
+// const displayPlaceList = (arr) =>{
+//     for(i=0; i < arr.length; i++){
+//         createPlaceListTemplate(arr[i])
+//         }
+//     }
+
+const addToList = (id)=>{
+    axios.post(`${baseURL}/placelist/${id}`)
+.then((res)=>{
+    console.log(res.data)
+
+    // displayPlaceList(res.data)
+})
 }
+
+//----------------------------------------------------------
+//-------------------------Events---------------------------
+//----------------------------------------------------------
 
 const createEventsTemplate = (event) => {
     const newEventTemp = document.createElement('section')
     newEventTemp.classList.add('event-template')
 
     newEventTemp.innerHTML = `
-    <img class="placesPic "src =${event.picture}/>
+    <img class="eventsPic "src =${event.picture}/>
 
     <p>${event.event}</p>
 
@@ -138,7 +182,7 @@ const createEventsTemplate = (event) => {
     Rating: ${event.stars}
     <button onclick="updateEvent(${event.id}, 'upvote')">+</button>
     </section>
-    <button onclick="addToList(${event.id}, "add")>add</button>
+    <button onclick="addEventsToList(${event.id})">add</button>
     <button onclick="deleteEvent(${event.id})">Remove</button>
 
     `
@@ -229,9 +273,19 @@ const updateEvent = (id, type) =>{
         console.log(err)
     })
 }
+//---------------------events list--------------------------
+const addEventsToList = (id)=>{
+    axios.post(`${baseURL}/eventlist/${id}`)
+.then((res)=>{
+    console.log(res.data)
 
+    // displayEventsList(res.data)
+})
+}
 
-
+//----------------------------------------------------------
+//-------------------------misc-----------------------------
+//----------------------------------------------------------
 const emailHandler = () =>{
     let confirmation = document.createElement('p');
     confirmation.textContent = "congrats welcome to the fam!"
@@ -241,5 +295,6 @@ const emailHandler = () =>{
 
 signUp.addEventListener('click', emailHandler)
 addNewPlace.addEventListener('click',addPlace)
+addNewEvent.addEventListener('click',addEvent)
 getAllPlaces()
 getAllEvents()
