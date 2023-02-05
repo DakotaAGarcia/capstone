@@ -8,10 +8,10 @@
     height: 100px;
     background-color:#E94F37;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 0px 25px;
+    padding: 20px 50px;
     font-size: 19px;
   }
   
@@ -35,16 +35,32 @@
   
   nav {
     display: flex;
-    width: 200px;
+    width: 50%;
     justify-content: space-between;
+    align-items: center;
   }
   .nav-links{
     display: flex;
+    color:#2EC4B6;
+    font-size: 24px;
+    margin: 0 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: black;
+    margin-left:10px;
+    padding: 5px 10px
   }
   .nav-links:hover {
-    color: #222222;
+    color: #CC7700;
     cursor: pointer;
     font-weight: 800;
+  }
+
+  .intro{
+    color: white;
+    background-color:black;
+    padding-left:39.5%;
+    padding-right: 39.5%;
   }
 
  
@@ -80,7 +96,7 @@ height: fit-content;
    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #393E41;
+    background-color: #292b2d;
     min-height: calc(100vh - 175px);
   }
   
@@ -104,12 +120,12 @@ height: fit-content;
     background-color:#2EC4B6;
     height: 60px;
     padding: 0px 30px;
-    align-items: center;
-    justify-content: space-between;
+    align-items:flex-start;
+    justify-content:flex-start;
     color: white;
   }
   .insta{
-    height: 40px;
+    height: 35px;
     }
   .facebook{
     height: 30px;
@@ -125,7 +141,7 @@ height: fit-content;
    display: flex;
     align-items: center;
     width: 425px;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-left:400px;
   }
   
@@ -135,9 +151,9 @@ height: fit-content;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-color: #F6F7EB;
-    height: 280px;
-    width: 195px;
+    border-color: #2EC4B6; ;
+    height: 360px;
+    width: 230px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -149,9 +165,9 @@ height: fit-content;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-color: #F6F7EB;
-    height: 280px;
-    width: 195px;
+    border-color: #E94F37;
+    height: 360px;
+    width: 230px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -163,9 +179,9 @@ height: fit-content;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-color: #F6F7EB;
-    height: 280px;
-    width: 195px;
+    border-color: #E94F37;
+    height: 360px;
+    width: 230px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -177,9 +193,9 @@ height: fit-content;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-color: #F6F7EB;
-    height: 280px;
-    width: 195px;
+    border-color: #2EC4B6; ;
+    height: 360px;
+    width: 230px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -187,8 +203,8 @@ height: fit-content;
 
   
   .placesPic {
-    height: 175px;
-    width: 175px;
+    height: 200px;
+    width: 200px;
     border-radius: 15px;
     padding: 5px;
     object-fit: cover;
@@ -226,21 +242,32 @@ height: fit-content;
   }
 
   #nextAdventure{
-padding-top: 200px;
+    display: flex;
+   align-items: flex-start;
+    padding-top: 200px;
   }
   #nextHobby{
-    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 200px;
 
   }
 
-  .places-card, .events-card {
+  #placesCard, #eventsCard, #placeListCard, #eventListCard{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: flex-start;
     width: 100%;
   }
   .hidden{
     display: none;
   }
+.confirm{
+    display: flex;
+    align-items: center;
+    width: 425px;
+    justify-content: flex-end;
+    padding-left:400px;
+}
+  

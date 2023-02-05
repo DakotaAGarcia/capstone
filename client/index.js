@@ -22,13 +22,13 @@ const footer = document.querySelector("footer")
 //-------------------------places---------------------------
 //----------------------------------------------------------
 
+
 const createPlacesTemplate = (place) => {
     const newPlaceTemp = document.createElement('section')
     newPlaceTemp.classList.add('place-template')
 
     newPlaceTemp.innerHTML = `
     <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
-    <input type = "text" placeholder="Enter a description">
     <p>${place.place}</p>
 
     <section>
@@ -128,32 +128,6 @@ const updatePlace = (id, type) =>{
     })
 }
 //-------------------places list---------------------------
-
-// const createPlaceListTemplate = (place) => {
-//     const newPlaceListTemp = document.createElement('section')
-//     newPlaceListTemp.classList.add('list-template')
-
-//     newPlaceListTemp.innerHTML = `
-//     <img class="placesPic "src =${place.picture}/>
-
-//     <p>${place.place}</p>
-
-//     <section>
-//     <button onclick="updatePlace(${place.id}, 'downvote')" >-</button>
-//     Rating: ${place.stars}
-//     <button onclick="updatePlace(${place.id}, 'upvote')">+</button>
-//     </section>
-//     <button onclick="addToList(${place.id})">add </button>
-//     <button onclick="deletePlace(${place.id})">Remove</button>
-
-//     `
-    
-// }
-// const displayPlaceList = (arr) =>{
-//     for(i=0; i < arr.length; i++){
-//         createPlaceListTemplate(arr[i])
-//         }
-//     }
 
 const addToList = (id)=>{
     axios.post(`${baseURL}/placelist/${id}`)
@@ -278,16 +252,17 @@ const addEventsToList = (id)=>{
     axios.post(`${baseURL}/eventlist/${id}`)
 .then((res)=>{
     console.log(res.data)
-
-    // displayEventsList(res.data)
 })
 }
 
 //----------------------------------------------------------
 //-------------------------misc-----------------------------
 //----------------------------------------------------------
+
+
 const emailHandler = () =>{
-    let confirmation = document.createElement('p');
+    let confirmation = document.createElement('p')
+    confirmation.classList.add('confirm');
     confirmation.textContent = "congrats welcome to the fam!"
     emailInput.remove()
     footer.appendChild(confirmation);

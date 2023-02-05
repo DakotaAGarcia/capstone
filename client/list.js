@@ -55,35 +55,6 @@ const displayPlaceList = (arr) =>{
         })
     }
     
-    // const addPlace = () =>{
-    //     placesTemp.innerHTML = ``
-    
-    //     const place = document.querySelector('#placeName')
-    
-    //     const picture = document.querySelector('#placePicture')
-    
-    //     let bodyObj = {
-    //         place: place.value,
-    //         url:picture.value
-    //     }
-    //     axios.post(`${baseURL}/places`, bodyObj)
-    //     .then((res) =>{
-    
-    //         console.log(res.data)
-    
-    
-    //         displayAllPlaces(res.data)
-    
-    //         place.value = ''
-    //         picture.value = ''
-    
-    
-    //     })
-    //     .catch((err) =>{
-    //         console.log(err)
-    //     })
-    
-    // }
     
     const updatePlaceList = (id, type) =>{
     
@@ -163,35 +134,6 @@ const displayPlaceList = (arr) =>{
         })
     }
     
-    // const addEventsToList = () =>{
-    //     eventsTemp.innerHTML = ``
-    
-    //     const event = document.querySelector('#eventName')
-    
-    //     const picture = document.querySelector('#eventPicture')
-    
-    //     let bodyObj = {
-    //         event: event.value,
-    //         url:picture.value
-    //     }
-    //     axios.post(`${baseURL}/events`, bodyObj)
-    //     .then((res) =>{
-    
-    //         console.log(res.data)
-    
-    
-    //         displayAllEvents(res.data)
-    
-    //         event.value = ''
-    //         picture.value = ''
-    
-    
-    //     })
-    //     .catch((err) =>{
-    //         console.log(err)
-    //     })
-    
-    // }
     
     const updateEventList = (id, type) =>{
     
