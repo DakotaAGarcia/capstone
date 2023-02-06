@@ -18,6 +18,7 @@ const emailInput = document.querySelector(".email-sign-up")
 
 const footer = document.querySelector("footer")
 
+
 //----------------------------------------------------------
 //-------------------------places---------------------------
 //----------------------------------------------------------
@@ -29,6 +30,7 @@ const createPlacesTemplate = (place) => {
 
     newPlaceTemp.innerHTML = `
     <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
+    <p id="text">${place.info}</p>
     <p>${place.place}</p>
 
     <section>
@@ -36,8 +38,8 @@ const createPlacesTemplate = (place) => {
     Rating: ${place.stars}
     <button onclick="updatePlace(${place.id}, 'upvote')">+</button>
     </section>
-    <button onclick="addToList(${place.id})">add </button>
-    <button onclick="deletePlace(${place.id})">Remove</button>
+    <button onclick="addToList(${place.id})">add to list</button>
+   
 
     `
     placesTemp.appendChild(newPlaceTemp)
@@ -133,8 +135,8 @@ const addToList = (id)=>{
     axios.post(`${baseURL}/placelist/${id}`)
 .then((res)=>{
     console.log(res.data)
-
-    // displayPlaceList(res.data)
+    placesTemp.innerHTML= ``
+    displayAllPlaces(res.data)
 })
 }
 
@@ -148,7 +150,6 @@ const createEventsTemplate = (event) => {
 
     newEventTemp.innerHTML = `
     <img class="eventsPic "src =${event.picture}/>
-
     <p>${event.event}</p>
 
     <section>
@@ -156,8 +157,8 @@ const createEventsTemplate = (event) => {
     Rating: ${event.stars}
     <button onclick="updateEvent(${event.id}, 'upvote')">+</button>
     </section>
-    <button onclick="addEventsToList(${event.id})">add</button>
-    <button onclick="deleteEvent(${event.id})">Remove</button>
+    <button onclick="addEventsToList(${event.id})">add to list</button>
+    
 
     `
     eventsTemp.appendChild(newEventTemp)
@@ -252,6 +253,10 @@ const addEventsToList = (id)=>{
     axios.post(`${baseURL}/eventlist/${id}`)
 .then((res)=>{
     console.log(res.data)
+
+    displayAllEvents(res.data)
+    eventsTemp.innerHTML = ``
+    displayAllEvents(res.data)
 })
 }
 

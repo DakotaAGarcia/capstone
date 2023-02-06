@@ -3,6 +3,7 @@
         {
             "id":1,
             "place": "Hawaii",
+            "info":"test",
             "picture":"https://www.gohawaii.com/sites/default/files/hero-unit-images/12845-p1bd4nb8t912gc1ic74nd14g2ru.jpg",
             "stars": 0
         },

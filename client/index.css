@@ -242,13 +242,11 @@ height: fit-content;
   }
 
   #nextAdventure{
-    display: flex;
-   align-items: flex-start;
+    
     padding-top: 200px;
   }
   #nextHobby{
-    display: flex;
-    align-items: flex-start;
+    
     padding-top: 200px;
 
   }
@@ -262,7 +260,13 @@ height: fit-content;
   }
   .hidden{
     display: none;
+    z-index: 2;
   }
+  #text{
+    z-index:0;
+
+  }
+
 .confirm{
     display: flex;
     align-items: center;

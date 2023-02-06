@@ -12,7 +12,7 @@ addToList: (req, res) =>{
 let pushedPlace = placesArray.splice( index, 1)
     yourList.push(pushedPlace[0])
 
-    res.status(200).send(yourList)
+    res.status(200).send(placesArray)
     
 },
 getPlacesList: (req, res) =>{
@@ -45,7 +45,7 @@ addEventsToList: (req, res) => {
     let pushedEvent = eventsArray.splice( index, 1)
     yourListTwo.push(pushedEvent[0])
 
-    res.status(200).send(yourListTwo)
+    res.status(200).send(eventsArray)
 },
 
 
