@@ -3,7 +3,7 @@
         {
             "id":1,
             "place": "Hawaii",
-            
+            "info": "Hawaii is an idyllic destination of eight main islands offering diverse landscapes, cultures, and adventures. From Maui's beaches and rainforests to Hawaii Island's volcanoes and black sand beaches, there is something for everyone. Come experience the breathtaking beauty and unique culture of this tropical paradise.",
             "picture":"https://www.gohawaii.com/sites/default/files/hero-unit-images/12845-p1bd4nb8t912gc1ic74nd14g2ru.jpg",
             "stars": 0
         },
@@ -39,7 +39,7 @@
         },
         {
             "id":7,
-            "place": "Machu Picchu",
+            "place": "Peru",
             "picture":"https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },

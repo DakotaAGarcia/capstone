@@ -29,20 +29,22 @@ const createPlacesTemplate = (place) => {
     newPlaceTemp.classList.add('place-template')
 
     newPlaceTemp.innerHTML = `
+    <div class="asdf">
+    <div class="container">
+    <p class="text">${place.info}</p></div>
     <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
-    
-    <p>${place.place}</p>
-
     <section>
+    <p>${place.place}</p>
+    
+    
     <div id="place-stars">
     ${place.starString||"Leave a rating"} </div>
     <button class="ratingbtn" onclick="updatePlace(${place.id}, 'downvote')" >-</button>
     <button class="ratingbtn" onclick="updatePlace(${place.id}, 'upvote')">+</button>
     </section>
-    <br>
+    
     <button onclick="addToList(${place.id})">add to list</button>
-   
-
+    </div>
     `
     placesTemp.appendChild(newPlaceTemp)
 }
@@ -152,6 +154,7 @@ const createEventsTemplate = (event) => {
 
     newEventTemp.innerHTML = `
     <img class="eventsPic "src =${event.picture}/>
+    
     <p>${event.event}</p>
 
     <section>
@@ -280,5 +283,6 @@ const emailHandler = () =>{
 signUp.addEventListener('click', emailHandler)
 addNewPlace.addEventListener('click',addPlace)
 addNewEvent.addEventListener('click',addEvent)
+
 getAllPlaces()
 getAllEvents()

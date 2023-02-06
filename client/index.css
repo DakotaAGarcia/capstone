@@ -85,13 +85,6 @@ height: fit-content;
 
 }
 
-#placesPic{
-    height: 175px;
-    width: 175px;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
   main{
    display: flex;
     flex-wrap: wrap;
@@ -168,8 +161,8 @@ height: fit-content;
     justify-content: center;
     border: solid;
     border-color: #E94F37;
-    height: 360px;
-    width: 230px;
+    height: 460px;
+    width: 300px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -205,11 +198,12 @@ height: fit-content;
 
   
   .placesPic {
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 240px;
     border-radius: 15px;
-    padding: 3px;
+    /* padding: 3px; */
     object-fit: cover;
+    z-index: 2;
   }
   .placesPic:hover{
     transform: scale(1.02,1.02);
@@ -262,11 +256,27 @@ height: fit-content;
   }
   .hidden{
     display: none;
-    z-index: 2;
+    
   }
-  #text{
-    z-index:0;
-
+  .container{
+    position: relative;
+    align-items: flex-start;
+    padding-right: 50%;
+    
+  }
+  .text{
+    align-items: flex-start;
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 195px;
+    width: 180px;
+    font-size: 13px;
+    object-fit: cover;
+    
+    
+    
   }
 
 .confirm{
@@ -286,3 +296,10 @@ height: fit-content;
     text-align: center;
 
   }
+ .asdf{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
