@@ -103,9 +103,10 @@ height: fit-content;
   button{
     background-color:#639FAB;
     border: none;
-    padding: 10px 10px;
+    
+    padding: 1px 10px;
     color: white;
-    border-radius: 15px;
+    border-radius: 20px;
   }
   button:hover{
     transform: scale(1.02,1.02);
@@ -143,6 +144,7 @@ height: fit-content;
     width: 425px;
     justify-content: flex-end;
     padding-left:400px;
+    padding-top: 20px;
   }
   
   .event-template{
@@ -206,7 +208,7 @@ height: fit-content;
     height: 200px;
     width: 200px;
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
     object-fit: cover;
   }
   .placesPic:hover{
@@ -217,7 +219,7 @@ height: fit-content;
     height: 175px;
     width: 175px;
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
     object-fit: cover;
   }
   .eventsPic:hover{
@@ -274,4 +276,13 @@ height: fit-content;
     justify-content: flex-end;
     padding-left:400px;
 }
-  
+  .ratingbtn{
+    display: inline-flexbox;
+   justify-content: center;
+   padding-left: 20px;
+   padding-right: 20px;
+  }
+  #place-stars, #event-stars{
+    text-align: center;
+
+  }

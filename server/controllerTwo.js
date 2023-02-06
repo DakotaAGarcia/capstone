@@ -44,7 +44,16 @@ module.exports = {
             }else if(type === 'downvote'){
                 eventsArray[index].stars--
             }
-    
+             // Limit the number of stars to 5
+  eventsArray[index].stars = Math.min(5, eventsArray[index].stars)
+  eventsArray[index].stars = Math.max(0, eventsArray[index].stars)
+
+  let starString = "";
+  for (let i = 0; i < eventsArray[index].stars; i++) {
+    starString += "&#9734;";
+  }
+
+  eventsArray[index].starString = starString;
             res.status(200).send(eventsArray)
         }
     

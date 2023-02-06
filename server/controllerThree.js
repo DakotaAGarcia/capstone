@@ -34,7 +34,16 @@ updatePlaceList: (req, res) =>{
     }else if(type === 'downvote'){
         yourList[index].stars--
     }
-    
+             // Limit the number of stars to 5
+  yourList[index].stars = Math.min(5, yourList[index].stars)
+  yourList[index].stars = Math.max(0, yourList[index].stars)
+
+  let starString = "";
+  for (let i = 0; i < yourList[index].stars; i++) {
+    starString += "&#9734;";
+  }
+
+  yourList[index].starString = starString;
    
     res.status(200).send(yourList)
 },
@@ -68,7 +77,15 @@ updateEventList: (req, res) =>{
     }else if(type === 'downvote'){
         yourListTwo[index].stars--
     }
-
+    yourListTwo[index].stars = Math.min(5, yourListTwo[index].stars)
+    yourListTwo[index].stars = Math.max(0, yourListTwo[index].stars)
+  
+    let starStringTwo = "";
+    for (let i = 0; i < yourListTwo[index].stars; i++) {
+      starStringTwo += "&#9734;";
+    }
+  
+    yourListTwo[index].starStringTwo = starStringTwo;
     res.status(200).send(yourListTwo)
 }
 }

@@ -30,14 +30,16 @@ const createPlacesTemplate = (place) => {
 
     newPlaceTemp.innerHTML = `
     <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
-    <p id="text">${place.info}</p>
+    
     <p>${place.place}</p>
 
     <section>
-    <button onclick="updatePlace(${place.id}, 'downvote')" >-</button>
-    Rating: ${place.stars}
-    <button onclick="updatePlace(${place.id}, 'upvote')">+</button>
+    <div id="place-stars">
+    ${place.starString||"Leave a rating"} </div>
+    <button class="ratingbtn" onclick="updatePlace(${place.id}, 'downvote')" >-</button>
+    <button class="ratingbtn" onclick="updatePlace(${place.id}, 'upvote')">+</button>
     </section>
+    <br>
     <button onclick="addToList(${place.id})">add to list</button>
    
 
@@ -153,10 +155,12 @@ const createEventsTemplate = (event) => {
     <p>${event.event}</p>
 
     <section>
-    <button onclick="updateEvent(${event.id}, 'downvote')" >-</button>
-    Rating: ${event.stars}
-    <button onclick="updateEvent(${event.id}, 'upvote')">+</button>
+    <div id="event-stars">
+    ${event.starString||"Leave a rating"} </div>
+    <button class="ratingbtn" onclick="updateEvent(${event.id}, 'downvote')" >-</button>
+    <button class="ratingbtn" onclick="updateEvent(${event.id}, 'upvote')">+</button>
     </section>
+    <br>
     <button onclick="addEventsToList(${event.id})">add to list</button>
     
 

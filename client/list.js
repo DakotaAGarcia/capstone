@@ -13,8 +13,10 @@ const createPlaceListTemplate = (place) => {
     <p>${place.place}</p>
 
     <section>
+    <div id="place-stars">
+    ${place.starString||"Leave a rating"} </div>
     <button onclick="updatePlaceList(${place.id}, 'downvote')" >-</button>
-    Rating: ${place.stars}
+    
     <button onclick="updatePlaceList(${place.id}, 'upvote')">+</button>
     </section>
     
@@ -89,9 +91,10 @@ const displayPlaceList = (arr) =>{
         <p>${event.event}</p>
     
         <section>
-        <button onclick="updateEventList(${event.id}, 'downvote')" >-</button>
-        Rating: ${event.stars}
-        <button onclick="updateEventList(${event.id}, 'upvote')">+</button>
+        <div id="event-stars">
+        ${event.starStringTwo||"Leave a rating"} </div>
+        <button class= "ratingbtn" onclick="updateEventList(${event.id}, 'downvote')" >-</button>
+        <button class= "ratingbtn" onclick="updateEventList(${event.id}, 'upvote')">+</button>
         </section>
        
         <button onclick="deleteEventList(${event.id})">Remove</button>
