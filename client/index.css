@@ -64,25 +64,52 @@
   }
 
  
-  #placeName {
-    width:fit-content;
-    height: fit-content;
+  #placeName, #addAPlace, #eventName,  #addAnEvent, #placePicture, #eventPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width:160px;
+    height: 20px;
     
 }
-#placePicture {
-width: fit-content;
-height: fit-content;
 
+#placeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 285px;
+    width: 245px;
+    max-width: 285px;
+    border-radius: 15px;
+    object-fit: cover;
+    background-color: #292b2d;
+    border: solid;
+    border-color: #2EC4B6;
+    align-items: center;
+    color:white;
+    font-size: 20px;
 }
-#eventName {
-    width:fit-content;
-    height: fit-content;
+#eventDescription {
+    display: flex;
+    justify-content: center;
+    height: 285px;
+    width: 245px;
+    border-radius: 15px;
+    object-fit: cover;
+    background-color: #292b2d;
+    border: solid;
+    border-color:#E94F37;
+    color: white;
+    font-size: 20px;
     
 }
-#eventPicture {
-width: fit-content;
-height: fit-content;
-
+#eventDescription:hover{
+    transform: scale(1.02,1.02);
+}
+#placeDescription:hover{
+    transform: scale(1.02,1.02);
 }
 
   main{
@@ -146,9 +173,9 @@ height: fit-content;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-color: #2EC4B6; ;
-    height: 360px;
-    width: 230px;
+    border-color: #2EC4B6;
+    height: 460px;
+    width: 300px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -175,8 +202,8 @@ height: fit-content;
     justify-content: center;
     border: solid;
     border-color: #E94F37;
-    height: 360px;
-    width: 230px;
+    height: 460px;
+    width: 300px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
@@ -189,19 +216,43 @@ height: fit-content;
     justify-content: center;
     border: solid;
     border-color: #2EC4B6; ;
-    height: 360px;
-    width: 230px;
+    height: 460px;
+    width: 300px;
     border-radius: 20px;
     color: #CC7700;
     margin: 25px;
   }
-
+  .create-event-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: #2EC4B6; ;
+    height: 460px;
+    width: 300px;
+    border-radius: 20px;
+    color: #CC7700;
+    margin: 25px;
+  }
   
+.create-place-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color:#E94F37;
+    height: 460px;
+    width: 300px;
+    border-radius: 20px;
+    color: #CC7700;
+    margin: 25px;
+  }
   .placesPic {
-    height: 280px;
-    width: 240px;
+    height: 285px;
+    width: 245px;
     border-radius: 15px;
-    /* padding: 3px; */
     object-fit: cover;
     z-index: 2;
   }
@@ -210,11 +261,11 @@ height: fit-content;
   }
   
   .eventsPic {
-    height: 175px;
-    width: 175px;
+    height: 285px;
+    width: 245px;
     border-radius: 15px;
-    padding: 3px;
     object-fit: cover;
+    z-index: 2;
   }
   .eventsPic:hover{
     transform: scale(1.02,1.02);
@@ -237,15 +288,6 @@ height: fit-content;
     box-shadow: 0 0 15px black;
   }
 
-  #nextAdventure{
-    
-    padding-top: 200px;
-  }
-  #nextHobby{
-    
-    padding-top: 200px;
-
-  }
 
   #placesCard, #eventsCard, #placeListCard, #eventListCard{
     display: flex;
@@ -255,7 +297,7 @@ height: fit-content;
     width: 100%;
   }
   .hidden{
-    display: none;
+    opacity: 0%;
     
   }
   .container{
@@ -264,14 +306,19 @@ height: fit-content;
     padding-right: 50%;
     
   }
+  .fix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .text{
     align-items: flex-start;
-    
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     height: 195px;
-    width: 180px;
+    width: 195px;
     font-size: 13px;
     object-fit: cover;
     
@@ -296,10 +343,8 @@ height: fit-content;
     text-align: center;
 
   }
- .asdf{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
- }
+  .center{
+    justify-content: center;
+    padding-left: 15%;
+  }
+ 

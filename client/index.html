@@ -31,32 +31,39 @@
         <h2 class="intro">Dedicated to helping you write your story</h2>
         
         <section  id="placesCard"></section>
-
         <section  id="eventsCard"></section>
-
-        <section id="nextAdventure">
-            <input type="text" placeholder="Where do you want to go?" id="placeName">
-            <input type="text" placeholder="Picture" id="placePicture">
-            <button id="addAPlace">Share it with us!</button>
-        </section>
-
-        <section id="nextHobby">
-            <input type="text" placeholder="What do you want to try?" id="eventName">
-            <input type="text" placeholder="Picture" id="eventPicture">
-            <button id="addAnEvent">Share it with us!</button>
-        </section>
-
-      </main>
-      
+        
+        <div class="create-place-template">
+            
+            <section id="nextAdventure">
+                <textarea placeholder="Tell us about it!" id="placeDescription"></textarea>
+                <div class ="center"><input type="text" placeholder="Picture URL" id="placePicture">
+                <input type="text" placeholder="Where do you want to go?" id="placeName">
+                <button id="addAPlace">Share it with us!</button></div>
+            </section>
+        </div>
+        
+        
+        <div class="create-event-template">
+            <section id="nextHobby">
+                <textarea placeholder="Tell us about it!" id="eventDescription"></textarea>
+               <div class="center"> <input type="text" placeholder="Picture URL" id="eventPicture">
+                <input type="text" placeholder="What do you want to try?" id="eventName">
+                <button id="addAnEvent">Share it with us!</button></div>
+            </section>
+        </div>
+    
+    </main>
+    
         
       
       <footer>
-        <p>Share your list with us!:</p>
+        <p>Share your list with your friends!:</p>
          <img class= "insta" id="social" src="https://drive.google.com/uc?export=view&id=1fjSmlz1QQVB61N2lrOB5ENH-TkLJZ7Ws" onclick="window.open('https://www.instagram.com', '_blank')" />
           <img  class="facebook" id="social" src="https://drive.google.com/uc?export=view&id=1iSI8t52MFH2q6IilHgGPaz-khsYFOwS_" onclick="window.open('https://www.facebook.com', '_blank')"/>
         <img class="twitter" id="social" src="https://drive.google.com/uc?export=view&id=1MM7wD__d_3sEYjTIyWSNrYAZoNEfwH1G" onclick="window.open('https://www.twitter.com', '_blank')"/>
         <section class="email-sign-up">
-          <p>Get emails on upcoming deals!</p>
+          <p>Get emails on upcoming events!</p>
           <input type="text" placeholder="your email"/>
           <button id="sign-up">Sign Up</button>
         </section>

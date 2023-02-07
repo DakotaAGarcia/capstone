@@ -9,11 +9,12 @@ module.exports = {
             res.status(200).send(eventsArray)
         },
         addEvents: (req, res) =>{
-            const {event, url} = req.body
+            const {event, url, info} = req.body
     
             let newEvent = {
                 id: globalId,
                 event: event,
+                info: info,
                 picture: url,
                 stars: 0
             }

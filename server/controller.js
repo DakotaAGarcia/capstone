@@ -9,11 +9,12 @@ module.exports = {
         res.status(200).send(placesArray)
     },
     addPlaces: (req, res) =>{
-        const {place, url} = req.body
+        const {place, url, info} = req.body
 
         let newPlace = {
             id: globalId,
             place: place,
+            info: info,
             picture: url,
             stars: 0
         }

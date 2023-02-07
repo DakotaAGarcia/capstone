@@ -29,22 +29,22 @@ const createPlacesTemplate = (place) => {
     newPlaceTemp.classList.add('place-template')
 
     newPlaceTemp.innerHTML = `
-    <div class="asdf">
+    
     <div class="container">
-    <p class="text">${place.info}</p></div>
+    <p class="text" >${place.info}</p></div>
     <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
     <section>
-    <p>${place.place}</p>
     
     
+    <p class="fix">${place.place}</p>
     <div id="place-stars">
     ${place.starString||"Leave a rating"} </div>
     <button class="ratingbtn" onclick="updatePlace(${place.id}, 'downvote')" >-</button>
     <button class="ratingbtn" onclick="updatePlace(${place.id}, 'upvote')">+</button>
     </section>
-    
+    <br>
     <button onclick="addToList(${place.id})">add to list</button>
-    </div>
+    
     `
     placesTemp.appendChild(newPlaceTemp)
 }
@@ -88,11 +88,12 @@ const addPlace = () =>{
     placesTemp.innerHTML = ``
 
     const place = document.querySelector('#placeName')
-
+    const info = document.querySelector('#placeDescription')
     const picture = document.querySelector('#placePicture')
 
     let bodyObj = {
         place: place.value,
+        info: info.value,
         url:picture.value
     }
     axios.post(`${baseURL}/places`, bodyObj)
@@ -104,6 +105,7 @@ const addPlace = () =>{
         displayAllPlaces(res.data)
 
         place.value = ''
+        info.value =''
         picture.value = ''
 
 
@@ -153,10 +155,12 @@ const createEventsTemplate = (event) => {
     newEventTemp.classList.add('event-template')
 
     newEventTemp.innerHTML = `
-    <img class="eventsPic "src =${event.picture}/>
+    <div class="container">
+    <p class="text" >${event.info}</p></div>
+    <img onclick="this.classList.add('hidden')" class="eventsPic "src =${event.picture}/>
+    
     
     <p>${event.event}</p>
-
     <section>
     <div id="event-stars">
     ${event.starString||"Leave a rating"} </div>
@@ -210,11 +214,12 @@ const addEvent = () =>{
     eventsTemp.innerHTML = ``
 
     const event = document.querySelector('#eventName')
-
+    const info = document.querySelector('#eventDescription')
     const picture = document.querySelector('#eventPicture')
 
     let bodyObj = {
         event: event.value,
+        info: info.value,
         url:picture.value
     }
     axios.post(`${baseURL}/events`, bodyObj)
@@ -226,6 +231,7 @@ const addEvent = () =>{
         displayAllEvents(res.data)
 
         event.value = ''
+        info.value = ''
         picture.value = ''
 
 

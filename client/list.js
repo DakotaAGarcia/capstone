@@ -8,16 +8,19 @@ const createPlaceListTemplate = (place) => {
     newPlaceListTemp.classList.add('list-template')
 
     newPlaceListTemp.innerHTML = `
-    <img class="placesPic "src =${place.picture}/>
+
+    <div class="container">
+    <p class="text"> ${place.info}</p></div>
+    <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
 
     <p>${place.place}</p>
 
     <section>
     <div id="place-stars">
     ${place.starString||"Leave a rating"} </div>
-    <button onclick="updatePlaceList(${place.id}, 'downvote')" >-</button>
+    <button class="ratingbtn" onclick="updatePlaceList(${place.id}, 'downvote')" >-</button>
     
-    <button onclick="updatePlaceList(${place.id}, 'upvote')">+</button>
+    <button class="ratingbtn" onclick="updatePlaceList(${place.id}, 'upvote')">+</button>
     </section>
     
     <button onclick="deletePlaceList(${place.id})">Remove</button>
@@ -77,6 +80,7 @@ const displayPlaceList = (arr) =>{
             console.log(err)
         })
     }
+    
     getPlacesList()
 
     
@@ -86,7 +90,10 @@ const displayPlaceList = (arr) =>{
         newEventListTemp.classList.add('event-list-template')
     
         newEventListTemp.innerHTML = `
-        <img class="eventsPic "src =${event.picture}/>
+
+        <div class="container">
+        <p class="text">${event.info}</p></div>
+        <img onclick="this.classList.add('hidden')" class="eventsPic "src =${event.picture}/>
     
         <p>${event.event}</p>
     
@@ -96,7 +103,7 @@ const displayPlaceList = (arr) =>{
         <button class= "ratingbtn" onclick="updateEventList(${event.id}, 'downvote')" >-</button>
         <button class= "ratingbtn" onclick="updateEventList(${event.id}, 'upvote')">+</button>
         </section>
-       
+       <br>
         <button onclick="deleteEventList(${event.id})">Remove</button>
     
         `

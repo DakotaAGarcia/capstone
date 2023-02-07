@@ -10,66 +10,77 @@
         {
             "id":2,
             "place": "Japan",
+            "info": "Japan is a land of contrasts, blending ancient tradition with cutting-edge technology. Explore bustling cities like Tokyo and Kyoto, or soak in serenity at hot springs and temples. Marvel at Mount Fuji and try sushi, or hike the Japanese Alps. From temples to theme parks, there's something for everyone.",
             "picture":"https://images.unsplash.com/photo-1554797589-7241bb691973?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
             "stars": 0
         },
         {
             "id":3,
             "place": "Egypt",
+            "info":"Egypt, land of Pharaohs and Pyramids. Explore the ancient civilization and its monuments, including the Great Pyramids of Giza and the Sphinx. Sail down the Nile and visit Luxor's temples and tombs. Immerse in local culture, try traditional food and witness the beauty of the Red Sea. Discover the mysteries of Egypt and be awed by its rich history.",
             "picture":"https://images.unsplash.com/photo-1539768942893-daf53e448371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
             "stars": 0
         },
         {
             "id":4,
             "place": "Alaska",
+            "info":"Alaska, a wilderness wonderland. Experience its natural beauty from glaciers to rugged coastlines, abundant wildlife and Northern Lights. Go fishing, kayaking or dog sledding, visit Denali National Park or ski in the winter. Discover the state's rich indigenous culture, gold rush history and scenic small towns. Alaska is an outdoor adventurer's dream come true.",
             "picture":"https://images.unsplash.com/photo-1574874066390-e885b0dabad9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
             "stars": 0
         },
         {
             "id":5,
             "place": "New York",
+            "info":"The city that never sleeps! Explore the city's iconic landmarks like the Statue of Liberty and Central Park, or shop and dine in the latest fashion and cuisine. See a Broadway show or visit world-renowned museums. Experience the diversity of cultures and bustling energy that make New York a true melting pot. Come see why it's called the 'Capital of the World.'",
             "picture":"https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
             "stars": 0
         },
         {
             "id":6,
             "place": "Australia",
+            "info":"Australia, a land of unique landscapes and adventure. Explore the outback, the Great Barrier Reef and Sydney's iconic Opera House. Visit charming coastal towns, go surfing or witness wildlife in their natural habitat. Discover the rich culture of the indigenous peoples, try delicious cuisine and enjoy the laid-back lifestyle. Australia is a destination like no other.",
             "picture":"https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80",
             "stars": 0
         },
         {
             "id":7,
             "place": "Peru",
+            "info":"Explore the rich history of Peru, from Machu Picchu to the Nazca Lines. Immerse in local culture, sample delicious cuisine and visit vibrant markets. Hike in the Andes or relax on the beach. Discover the beauty and diversity of Peru, from its ancient ruins to its lush Amazon rainforest.",
             "picture":"https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id":8,
             "place": "Spain",
+            "info":"From its sun-kissed beaches to its vibrant cities, Spain is a country of diverse regions and rich culture. Savor delicious tapas, witness flamenco dancing, and visit historic landmarks like the Alhambra and Sagrada Familia. Explore picturesque villages and enjoy the Mediterranean climate.",
             "picture":"https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
             "stars": 0
         },
         {
             "id":9,
             "place": "Germany",
+            "info": "From its medieval castles to its modern cities, Germany is a land of contrasts. Visit Berlin, Munich and Frankfurt, see the Brandenburg Gate and explore the Black Forest. Experience Oktoberfest, visit the Berlin Wall Memorial or stroll along the Rhine river. Germany has something for everyone.",
             "picture":"https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id":10,
             "place": "France",
+            "info":"France, the land of romance and sophistication. From the iconic Eiffel Tower to the charming streets of Paris, France is a feast for the senses. Indulge in wine and cuisine, visit the Louvre Museum or shop on the Champs-Elysées. Explore the countryside, from the beaches of Normandy to the vineyards of Bordeaux.",
             "picture":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
             "stars": 0
         },
         {
             "id":11,
             "place": "Italy",
+            "info": "Italy, a country of art, history and delicious cuisine. Explore the ancient ruins of Rome, the canals of Venice, the rolling hills of Tuscany, and the fashion capital of Milan. Sample authentic pasta, pizza, and gelato, visit the Vatican and the Colosseum, and witness the beauty of the Amalfi Coast.",
             "picture":"https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id":12,
             "place": "Mexico",
+            "info": "Mexico, a vibrant country of rich history and diverse landscapes. Explore ancient ruins like Chichen Itza, relax on the beaches of Cancun, or indulge in Mexican cuisine. Visit colonial cities like San Miguel de Allende and Guadalajara, witness vibrant festivals, or shop for handmade crafts. Mexico is a colorful adventure waiting to be had.",
             "picture":"https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
             "stars": 0
         }
@@ -79,72 +90,84 @@
         {
             "id": 1,
             "event": "Surfing",
+            "info":"Catch the waves and feel the thrill of surfing. Whether you're a beginner or an experienced surfer, there's a perfect break for you. From Hawaii to Australia, the world is full of iconic surf spots waiting to be explored. Ride the waves and live life to the fullest.",
             "picture": "https://images.unsplash.com/photo-1517699418036-fb5d179fef0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80",
             "stars": 0
         },
         {
             "id": 2,
             "event": "Rock Climbing",
+            "info":"Scale new heights and test your limits with rock climbing. From indoor gyms to outdoor crags, there are endless opportunities for adventure. Hone your skills, challenge yourself, and enjoy the rush of adrenaline that comes with climbing.",
             "picture": "https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=803&q=80",
             "stars": 0
         },
         {
             "id": 3,
             "event": "Scuba Diving",
+            "info":"Explore the underwater world and discover its hidden beauty with scuba diving. From tropical reefs to shipwrecks, there are countless dive sites to choose from. Observe marine life, gain a new perspective, and experience a sense of weightlessness like no other.",
             "picture": "https://images.unsplash.com/photo-1592859632074-cf5cfb714552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
             "stars": 0
         },
         {
             "id": 4,
             "event": "Boxing",
+            "info":"Get fit and learn self-defense with boxing. From cardio to hand-eye coordination, boxing offers numerous benefits. Whether you're training for competition or just looking to stay in shape, boxing is a high-intensity workout that will push you to your limits.",
             "picture": "https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80",
             "stars": 0
         },
         {
             "id": 5,
             "event": "Sky Diving",
+            "info":"Soar through the sky and experience the ultimate adrenaline rush with skydiving. From solo jumps to tandem dives, skydiving offers a unique perspective on the world. Take the leap, feel the wind in your hair, and live life on the edge.",
             "picture": "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id": 6,
-            "event": "Running with the Bulls",
+            "event": "Running of the bulls",
+            "info":"Embrace the thrill of the chase with running with the bulls. A traditional Spanish event, runners test their courage and quickness by trying to outrun a herd of bulls. Whether you're a seasoned runner or just looking for an exciting challenge, this is an experience you'll never forget.",
             "picture": "https://images.unsplash.com/photo-1533549985351-6c106c453155?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id": 7,
-            "event": "Swimming with Dolphins",
+            "event": "Swim with Dolphins",
+            "info":"Swim with the friendly and playful dolphins and create memories that will last a lifetime. Whether you're snorkeling, diving, or just swimming in the open ocean, the chance to interact with these intelligent creatures is a once-in-a-lifetime opportunity.",
             "picture": "https://images.unsplash.com/photo-1562742329-44b5a9a34dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
             "stars": 0
         },
         {
             "id": 8,
             "event": "Back Packing",
+            "info":"Hike into the wilderness and experience the freedom of backpacking. From challenging mountain trails to tranquil lakeside campsites, backpacking allows you to disconnect and escape the hustle and bustle of everyday life. Find solitude, challenge yourself, and create lasting memories.",
             "picture": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id": 9,
             "event": "Yoga",
+            "info":"Find peace and balance with yoga. A practice that combines physical poses, breathing techniques, and meditation, yoga offers numerous benefits. Whether you're looking to reduce stress, increase flexibility, or just take some time for yourself, yoga is a perfect way to center your mind and body.",
             "picture": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=499&q=80",
             "stars": 0
         },
         {
             "id": 10,
             "event": "Hunting",
+            "info":"Join the tradition of hunting and experience the thrill of the hunt. From big game hunting to bird hunting, there are endless opportunities for adventure. Whether you're an experienced hunter or just looking to try something new, hunting offers a unique connection to nature and the chance to test your skills.",
             "picture": "https://images.unsplash.com/photo-1615226661904-a5ea74800579?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id": 11,
             "event": "Fishing",
+            "info":"Cast a line and relax with fishing. From freshwater to saltwater, there are countless opportunities to reel in a catch. Whether you're fishing for sport or just looking for a peaceful day on the water, fishing is a timeless tradition that offers the chance to connect with nature and enjoy the great outdoors.",
             "picture": "https://images.unsplash.com/photo-1601226041388-8bbabdd6e37e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "stars": 0
         },
         {
             "id": 12,
             "event": "Paddle Boarding",
+            "info":"Glide across the water and experience the serenity of paddle boarding. Whether you're exploring a calm lake or riding the waves, paddle boarding is a low-impact workout that offers a unique perspective on the water. Find your balance, enjoy the scenery, and let the calmness wash over you.",
             "picture": "https://images.unsplash.com/photo-1601283261983-543e77949437?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
             "stars": 0
         }
