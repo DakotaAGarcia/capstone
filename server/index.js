@@ -50,6 +50,13 @@ app.delete('/eventlist/:id', deleteEventList)
 
 app.put('/eventlist/:id', updateEventList)
 
+//endpoints for login and sign up
+
+const { signUp, login} = require('./controllerFour')
+app.post('/login', login)
+
+app.post('/signUp', signUp)
+
 
 //start server with app.listen
 app.listen(4321, () => console.log('4321 lets gooooooo'))

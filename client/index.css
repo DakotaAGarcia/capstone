@@ -300,6 +300,9 @@
     opacity: 0%;
     
   }
+  .unhidden{
+    opacity: 100%;
+  }
   .container{
     position: relative;
     align-items: flex-start;
@@ -348,3 +351,54 @@
     padding-left: 15%;
   }
  
+
+  /* Add some basic styling */
+/* .form-container{ */
+    #signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: #2EC4B6; ;
+    height: 460px;
+    width: 300px;
+    border-radius: 20px;
+    color:#E94F37;
+    margin: 25px;
+  }
+
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color:#E94F37;
+    height: 460px;
+    width: 300px;
+    border-radius: 20px;
+    color:aqua;
+    margin: 25px;
+  }
+  .signUpForm, .loginForm {
+    
+    width: 250px;
+    height: 30px;
+    margin-top: 2px;
+    border: 0.1px solid #e9ecf5;
+    border-radius: 2px;
+    margin-bottom: 6px;
+  }
+
+  .signUpMessage{  
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#E94F37;
+    font-weight: 800;
+    }
+    
+  

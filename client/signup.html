@@ -29,31 +29,33 @@
         
       </header>
       <main>
-        <h2 class="intro">Dedicated to helping you write your story</h2>
-        
-        
-        <section  id="eventsCard"></section>
-        
-        <div class="create-place-template">
-            
-            <section id="nextAdventure">
-                <textarea placeholder="Tell us about it!" id="placeDescription"></textarea>
-                <div class ="center"><input type="text" placeholder="Picture URL" id="placePicture">
-                <input type="text" placeholder="Where do you want to go?" id="placeName">
-                <button id="addAPlace">Share it with us!</button></div>
-            </section>
+          <div class="form-container">
+      <form id="signup-form">
+        <h3>Sign up to save and share your lists!</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="signUpForm" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" class="signUpForm" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="signUpForm"required>
+        <button class="signupBtn" type="submit">Sign Up</button>
+        <div class ="signUpSuccess"></div>
+    </div>
+      </form>
+      <div class="form2-container">
+        <form id="login-form">
+            <h3>Already a member? Login here:</h3>
+          <label for="userLogin">Username:</label>
+          <input type="text" id="userLogin" class="loginForm" required>
+          <label for="password">Password:</label>
+          <input type="password" id="loginPassword" class="loginForm"required>
+          <button class="loginBtn">Login</button>
+          <div class ="loginSuccess"></div>
+          <div class = "loginFailed"></div>
         </div>
-        
-        
-        <div class="create-event-template">
-            <section id="nextHobby">
-                <textarea placeholder="Tell us about it!" id="eventDescription"></textarea>
-               <div class="center"> <input type="text" placeholder="Picture URL" id="eventPicture">
-                <input type="text" placeholder="What do you want to try?" id="eventName">
-                <button id="addAnEvent">Share it with us!</button></div>
-            </section>
-        </div>
-    
+        </form>
+
+
     </main>
     
         
@@ -75,6 +77,6 @@
 
 
     <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src ="./index.js"></script>
+    <script src ="./signup.js"></script>
 </body>
 </html>

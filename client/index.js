@@ -32,7 +32,8 @@ const createPlacesTemplate = (place) => {
     
     <div class="container">
     <p class="text" >${place.info}</p></div>
-    <img onclick="this.classList.add('hidden')" class="placesPic "src =${place.picture}/>
+    <img onclick="this.classList.add('hidden')"class="placesPic "src =${place.picture}/>
+
     <section>
     
     

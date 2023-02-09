@@ -3,6 +3,13 @@ const baseURL = "http://localhost:4321"
 
 const placeList = document.querySelector('#placeListCard')
 const eventList = document.querySelector('#eventListCard')
+
+const signUp = document.querySelector('#sign-up')
+
+const emailInput = document.querySelector(".email-sign-up")
+
+const footer = document.querySelector("footer")
+
 const createPlaceListTemplate = (place) => {
     const newPlaceListTemp = document.createElement('section')
     newPlaceListTemp.classList.add('list-template')
@@ -164,4 +171,14 @@ const displayPlaceList = (arr) =>{
             console.log(err)
         })
     }
+
+    const emailHandler = () =>{
+        let confirmation = document.createElement('p')
+        confirmation.classList.add('confirm');
+        confirmation.textContent = "congrats welcome to the fam!"
+        emailInput.remove()
+        footer.appendChild(confirmation);
+    }
+    
+    signUp.addEventListener('click', emailHandler)
     getEventsList()
